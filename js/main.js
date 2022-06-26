@@ -97,12 +97,32 @@ let beginnerElem = document.getElementById('beginner');
 //append skills to the DOM
 function appendSkills(skills, elem) {
     skills.forEach(skill => {
-        let skillElem = document.createElement('li');
-        skillElem.innerHTML = skill;
-        elem.appendChild(skillElem);
+        
     });
+
+    for(let i = 0 ; i < skills.length ; i = i +2) {
+        let row = document.createElement('div');
+        row.className = 'row';
+        let col1 = document.createElement('div');
+        col1.className = 'col';
+        col1.innerHTML = GetCollInnerHTML(skills[i]);
+        let col2 = document.createElement('div');
+        col2.className = 'col';
+        col2.innerHTML = GetCollInnerHTML(skills[i+1]);
+        row.appendChild(col1);
+        row.appendChild(col2);
+        elem.appendChild(row);
+    }
+    
 }
 
+function GetCollInnerHTML(value = '') {
+    if(value !== ''){
+       return '- ' + value;
+    } else {
+        return '';
+    }
+}
 appendSkills(advanced, advancedElem);
 appendSkills(experienced, experiencedElem);
 appendSkills(beginner, beginnerElem);
