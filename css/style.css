@@ -83,5 +83,9 @@ body {
 h2{
     text-decoration: underline;
 }
-li{
+.avatar{
+    width: 200px;
+    aspect-ratio: auto 200 / 200;
+    height: 200px;
+    border-radius: 50%;
 }
