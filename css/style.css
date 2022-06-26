@@ -74,14 +74,24 @@ body {
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    margin:7px;
 }
 
 .mt-2{
     margin-top: 2rem;
 }
 
-h2{
-    text-decoration: underline;
+.mt-1{
+    margin-top: 1rem;
+}
+
+.b-right{
+    border-right: 1px solid #FFFFFF;
+}
+
+.m-lf-2{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .avatar{
     width: 200px;

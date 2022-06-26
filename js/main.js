@@ -89,10 +89,28 @@ let skillsList = [[
     'Android Studio',
     'Svelte'
   ]];
+
+let publicRepos = [
+    'ceduardorubio/ceduardorubio.github.io',
+'ceduardorubio/slipByCapital',
+'ceduardorubio/nodejs-skill-tests-topics',
+'ceduardorubio/User-Public-Repos-Commits',
+'ceduardorubio/ceduardorubio',
+'ceduardorubio/ceduardo-page',
+'ceduardorubio/VSCode-Extension-Webview',
+'ceduardorubio/grahamjs',
+'ceduardorubio/Async-Array-Operations',
+'ceduardorubio/SensorHexFrameToJSON',
+'ceduardorubio/WHITELISTS-BY-COUNTRIES',
+'ceduardorubio/pdfeditor',
+'ceduardorubio/ernest'
+]
 let [advanced, experienced, beginner] = skillsList;
 let advancedElem = document.getElementById('advanced');
 let experiencedElem = document.getElementById('experienced');
 let beginnerElem = document.getElementById('beginner');
+
+let reposElem = document.getElementById('repos');
 
 //append skills to the DOM
 function appendSkills(skills, elem) {
@@ -116,6 +134,19 @@ function appendSkills(skills, elem) {
     
 }
 
+function appenRepos (repos,elem){
+    repos.forEach(repo => {
+        let row = document.createElement('div');
+        row.className = 'row';
+        let col1 = document.createElement('div');
+        col1.className = 'col';
+        col1.innerHTML = '- ' + repo;
+        row.appendChild(col1);
+        elem.appendChild(row);
+    }
+    );
+}
+
 function GetCollInnerHTML(value = '') {
     if(value !== ''){
        return '- ' + value;
@@ -126,4 +157,6 @@ function GetCollInnerHTML(value = '') {
 appendSkills(advanced, advancedElem);
 appendSkills(experienced, experiencedElem);
 appendSkills(beginner, beginnerElem);
+
+appenRepos(publicRepos, reposElem);
 
