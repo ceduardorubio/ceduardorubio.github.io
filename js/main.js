@@ -65,7 +65,8 @@ let skillsList = [[
     'Microsoft Office'
   ],
   [
-    'Graphic Design',        
+    'Graphic Design', 
+    'Three.js',       
     'Electron',
     'Electronic Billing',    
     'VoIP',
