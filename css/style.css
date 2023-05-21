@@ -9,12 +9,12 @@ body {
     background-color: #2a2a2a;
     color: #fefefe;
     min-height: 100vh;
-    background: url(../img/gradient.jpg) no-repeat center center fixed; 
+    /* background: url(../img/gradient.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-      
+    background-size: cover; */
+    background: linear-gradient(317deg, rgba(19,60,97,1) 17%, rgba(0,6,8,1) 93%);      
 }
 
 .c-c-content {
