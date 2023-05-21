@@ -91,27 +91,12 @@ let skillsList = [[
     'Svelte'
   ]];
 
-let publicRepos = [
-    'ceduardorubio/ceduardorubio.github.io',
-'ceduardorubio/slipByCapital',
-'ceduardorubio/nodejs-skill-tests-topics',
-'ceduardorubio/User-Public-Repos-Commits',
-'ceduardorubio/ceduardorubio',
-'ceduardorubio/ceduardo-page',
-'ceduardorubio/VSCode-Extension-Webview',
-'ceduardorubio/grahamjs',
-'ceduardorubio/Async-Array-Operations',
-'ceduardorubio/SensorHexFrameToJSON',
-'ceduardorubio/WHITELISTS-BY-COUNTRIES',
-'ceduardorubio/pdfeditor',
-'ceduardorubio/ernest'
-]
+
 let [advanced, experienced, beginner] = skillsList;
 let advancedElem = document.getElementById('advanced');
 let experiencedElem = document.getElementById('experienced');
 let beginnerElem = document.getElementById('beginner');
 
-let reposElem = document.getElementById('repos');
 
 //append skills to the DOM
 function appendSkills(skills, elem) {
@@ -159,5 +144,5 @@ appendSkills(advanced, advancedElem);
 appendSkills(experienced, experiencedElem);
 appendSkills(beginner, beginnerElem);
 
-appenRepos(publicRepos, reposElem);
+
 
