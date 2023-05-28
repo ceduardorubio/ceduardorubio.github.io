@@ -99,3 +99,10 @@ body {
     height: 200px;
     border-radius: 50%;
 }
+
+a{
+    color:springgreen;
+    display: flex;
+    gap:10px;
+    text-decoration: none;
+}
